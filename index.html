@@ -1,0 +1,1348 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planejamento Nutricional - Priscila Andrade Pires</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- html2pdf.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+    <!-- Botão de Download PDF -->
+    <button id="downloadPdf" class="pdf-button">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 0 0 1-2-2v-15"></path>
+            <polyline points="7,10 12,15 17,10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+        </svg>
+        Salvar PDF
+    </button>
+
+    <!-- Documento PDF -->
+    <div id="pdf-content">
+        
+        <!-- CAPA -->
+        <div class="page cover-page">
+            <div class="cover-content">
+                <div class="logo-container">
+                    <svg class="logo" viewBox="0 0 100 100" fill="currentColor">
+                        <circle cx="50" cy="50" r="45" stroke="currentColor" stroke-width="2" fill="none"/>
+                        <text x="50" y="60" text-anchor="middle" font-family="Inter" font-weight="700" font-size="24">LN</text>
+                    </svg>
+                </div>
+                
+                <h1 class="cover-title">Leonardo Alves</h1>
+                <p class="cover-subtitle">Nutrição Esportiva Personalizada</p>
+                
+                <div class="cover-divider"></div>
+                
+                <h2 class="cover-document-title">PLANEJAMENTO NUTRICIONAL COMPLETO</h2>
+                <p class="cover-tagline">Transformando sua saúde através da nutrição personalizada</p>
+                <h3 class="cover-patient">Priscila Andrade Pires</h3>
+            </div>
+        </div>
+
+        <!-- PÁGINA 1 - OBJETIVO E ANÁLISE -->
+        <div class="page">
+            <header class="header">
+                <div class="header-left">
+                    <svg class="header-logo" viewBox="0 0 100 100" fill="currentColor">
+                        <circle cx="50" cy="50" r="40" stroke="currentColor" stroke-width="3" fill="none"/>
+                        <text x="50" y="58" text-anchor="middle" font-family="Inter" font-weight="700" font-size="20">LN</text>
+                    </svg>
+                    <div>
+                        <div class="header-name">Leonardo Alves</div>
+                        <div style="font-size: 0.8rem; opacity: 0.9;">CRN-ES: 23.101.210</div>
+                    </div>
+                </div>
+                <div class="header-contact">
+                    <div class="contact-item">leonutri.1993@gmail.com</div>
+                    <div class="contact-item">(27)99750-4849 | @Leonutrialves</div>
+                    <div class="contact-item"><strong>Priscila Andrade Pires - 32 anos</strong></div>
+                </div>
+            </header>
+
+            <div class="main-content">
+                <div class="patient-section">
+                    <h1 class="patient-name">PRISCILA ANDRADE PIRES</h1>
+                </div>
+
+                <section class="content-section">
+                    <h2 class="section-title">🎯 OBJETIVO DO PLANO NUTRICIONAL</h2>
+                    <div class="objective-intro">
+                        <p>Priscila, este planejamento nutricional foi cuidadosamente elaborado especialmente para você, considerando suas necessidades individuais, histórico de saúde, resultados de exames e objetivos pessoais. Nosso compromisso é promover uma transformação completa e sustentável em sua saúde e bem-estar.</p>
+                    </div>
+                    
+                    <h3 style="margin: 30px 0 20px 0; color: #2c3e50; font-size: 1.4rem;">O que estamos fazendo:</h3>
+                    
+                    <div class="objectives-grid">
+                        <div class="objective-card">
+                            <div class="objective-icon">🎯</div>
+                            <h4>Recomposição Corporal Inteligente</h4>
+                            <p>Desenvolvemos estratégias para reduzir gordura corporal, especialmente na região abdominal, enquanto preservamos e aumentamos sua massa muscular para um corpo mais forte e saudável.</p>
+                        </div>
+                        
+                        <div class="objective-card">
+                            <div class="objective-icon">🌱</div>
+                            <h4>Restauração da Saúde Intestinal</h4>
+                            <p>Implementamos um protocolo específico para tratar o intestino permeável e a disbiose, otimizando sua digestão e absorção de nutrientes.</p>
+                        </div>
+                        
+                        <div class="objective-card">
+                            <div class="objective-icon">  </div>
+                            <h4>Equilíbrio Emocional</h4>
+                            <p>Utilizamos alimentos e nutrientes que atuam diretamente no sistema nervoso para ajudar no controle da ansiedade e estabilização do humor.</p>
+                        </div>
+                        
+                        <div class="objective-card">
+                            <div class="objective-icon">⚖️</div>
+                            <h4>Otimização Hormonal Natural</h4>
+                            <p>Focamos no equilíbrio hormonal, especialmente a regulação da prolactina, para melhorar seu sono e bem-estar geral.</p>
+                        </div>
+                        
+                        <div class="objective-card">
+                            <div class="objective-icon">🔥</div>
+                            <h4>Redução da Inflamação Sistêmica</h4>
+                            <p>Adotamos uma abordagem anti-inflamatória através da alimentação e suplementação para promover a saúde celular.</p>
+                        </div>
+                        
+                        <div class="objective-card">
+                            <div class="objective-icon">⚡</div>
+                            <h4>Aumento da Energia e Vitalidade</h4>
+                            <p>Estruturamos um plano que potencializa sua disposição física e mental para as atividades do dia a dia.</p>
+                        </div>
+                    </div>
+                    <p style="margin-top: 30px; font-size: 1.1rem; line-height: 1.7; color: #34495e; text-align: justify;">Nossa abordagem integra nutrição personalizada, suplementação estratégica e orientações para atividade física, sempre respeitando seu estilo de vida e preferências.</p>
+                </section>
+
+                <section class="content-section">
+                    <h2 class="section-title">   ANÁLISE CLÍNICA E DE EXAMES</h2>
+                    
+                    <div class="analysis-intro">
+                        <p>Com base na análise dos seus exames laboratoriais, identificamos alguns aspectos importantes que norteiam nosso planejamento. É fundamental entender que esses achados são comuns e totalmente tratáveis através da nutrição adequada.</p>
+                    </div>
+                    
+                    <div class="analysis-grid">
+                        <div class="analysis-card">
+                            <h4>🔬 Marcadores Analisados</h4>
+                            <ul>
+                                <li><strong>Processo Inflamatório Leve:</strong> Detectamos marcadores que indicam uma inflamação sistêmica discreta, frequentemente associada ao estresse e alterações intestinais</li>
+                                <li><strong>Saúde Intestinal:</strong> Há sinais de que seu intestino pode estar com a permeabilidade aumentada, afetando a absorção de nutrientes</li>
+                                <li><strong>Perfil Hormonal:</strong> Observamos um leve desequilíbrio na prolactina, que pode estar relacionado ao estresse e impactar o sono e humor</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="analysis-card">
+                            <h4>📋 Sintomas Relatados por Você</h4>
+                            <ul>
+                                <li>Episódios de ansiedade</li>
+                                <li>Inchaço abdominal após as refeições</li>
+                                <li>Desânimo e indisposição</li>
+                                <li>Desejo de melhorar a composição corporal</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="strategy-box">
+                        <h4>Nossa Estratégia:</h4>
+                        <p>Desenvolvemos um protocolo nutricional e de suplementação que atua diretamente nesses pontos, promovendo o reequilíbrio natural do seu organismo através de uma abordagem anti-inflamatória, probiótica e moduladora do humor.</p>
+                    </div>
+                </section>
+            </div>
+
+            <footer class="footer">
+                <span>São Mateus - ES, 23 de julho de 2025</span>
+            </footer>
+        </div>
+
+        <!-- PÁGINA 2 - AVALIAÇÃO FÍSICA -->
+        <div class="page">
+            <header class="header">
+                <div class="header-left">
+                    <svg class="header-logo" viewBox="0 0 100 100" fill="currentColor">
+                        <circle cx="50" cy="50" r="40" stroke="currentColor" stroke-width="3" fill="none"/>
+                        <text x="50" y="58" text-anchor="middle" font-family="Inter" font-weight="700" font-size="20">LN</text>
+                    </svg>
+                    <div>
+                        <div class="header-name">Leonardo Alves</div>
+                        <div style="font-size: 0.8rem; opacity: 0.9;">CRN-ES: 23.101.210</div>
+                    </div>
+                </div>
+                <div class="header-contact">
+                    <div class="contact-item">leonutri.1993@gmail.com</div>
+                    <div class="contact-item">(27)99750-4849 | @Leonutrialves</div>
+                    <div class="contact-item"><strong>Priscila Andrade Pires - 32 anos</strong></div>
+                </div>
+            </header>
+
+            <div class="main-content">
+                <section class="content-section">
+                    <h2 class="section-title">📏 AVALIAÇÃO FÍSICA</h2>
+                    
+                    <div class="evaluation-container">
+                        <div class="table-container">
+                            <h4>Comparativo de Avaliações - Perimetria e Adipômetro</h4>
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>Parâmetro</th>
+                                        <th>02/05/2025</th>
+                                        <th>22/07/2025</th>
+                                        <th>Diferença</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Altura</strong></td>
+                                        <td>1,75 m</td>
+                                        <td>1,75 m</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Peso</strong></td>
+                                        <td>85,60 kg</td>
+                                        <td>84,60 kg</td>
+                                        <td class="negative">-1,00 kg</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>IMC</strong></td>
+                                        <td>27,95</td>
+                                        <td>27,62</td>
+                                        <td class="negative">-0,33</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Massa Gorda</strong></td>
+                                        <td>26,93 kg (31,47%)</td>
+                                        <td>26,56 kg (31,40%)</td>
+                                        <td class="negative">-0,37 kg (-0,07%)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Massa Magra</strong></td>
+                                        <td>58,67 kg (68,53%)</td>
+                                        <td>58,04 kg (68,60%)</td>
+                                        <td class="attention">-0,63 kg (+0,07%)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Cintura</strong></td>
+                                        <td>86,00 cm</td>
+                                        <td>86,50 cm</td>
+                                        <td class="attention">+0,50 cm</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Abdômen</strong></td>
+                                        <td>94,00 cm</td>
+                                        <td>97,00 cm</td>
+                                        <td class="attention">+3,00 cm</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Quadril</strong></td>
+                                        <td>111,00 cm</td>
+                                        <td>110,50 cm</td>
+                                        <td class="negative">-0,50 cm</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Coxa Direita</strong></td>
+                                        <td>61,00 cm</td>
+                                        <td>59,00 cm</td>
+                                        <td class="negative">-2,00 cm</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Coxa Esquerda</strong></td>
+                                        <td>60,50 cm</td>
+                                        <td>59,00 cm</td>
+                                        <td class="negative">-1,50 cm</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="analysis-summary">
+                            <h4>Análise Comparativa:</h4>
+                            
+                            <div class="summary-card">
+                                <h5>⚖️ Peso e IMC</h5>
+                                <p>Você perdeu 1kg em quase 2 meses e meio, o que é um ritmo lento, mas compreensível dado o contexto. O IMC ainda a coloca em sobrepeso.</p>
+                            </div>
+                            
+                            <div class="summary-card highlight">
+                                <h5>🎯 Composição Corporal - PONTO DE ATENÇÃO</h5>
+                                <p><strong>Aqui está o X da questão!</strong> Você perdeu massa magra (0,63kg) e, o mais preocupante, ganhou gordura abdominal (+3cm na circunferência do abdômen). Isso é um sinal clássico de estresse crônico e cortisol elevado. O corpo, sob estresse, tende a catabolizar músculo e estocar gordura na região abdominal.</p>
+                            </div>
+                            
+                            <div class="summary-card strategy">
+                                <h5>🔄 Nosso Novo Foco</h5>
+                                <p>Será específico para reverter esse padrão através de estratégias nutricionais anti-estresse e preservação muscular.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <footer class="footer">
+                <span>São Mateus - ES, 23 de julho de 2025</span>
+            </footer>
+        </div>
+
+        <!-- PÁGINA 3 - ORIENTAÇÕES GERAIS -->
+        <div class="page">
+            <header class="header">
+                <div class="header-left">
+                    <svg class="header-logo" viewBox="0 0 100 100" fill="currentColor">
+                        <circle cx="50" cy="50" r="40" stroke="currentColor" stroke-width="3" fill="none"/>
+                        <text x="50" y="58" text-anchor="middle" font-family="Inter" font-weight="700" font-size="20">LN</text>
+                    </svg>
+                    <div>
+                        <div class="header-name">Leonardo Alves</div>
+                        <div style="font-size: 0.8rem; opacity: 0.9;">CRN-ES: 23.101.210</div>
+                    </div>
+                </div>
+                <div class="header-contact">
+                    <div class="contact-item">leonutri.1993@gmail.com</div>
+                    <div class="contact-item">(27)99750-4849 | @Leonutrialves</div>
+                    <div class="contact-item"><strong>Priscila Andrade Pires - 32 anos</strong></div>
+                </div>
+            </header>
+
+            <div class="main-content">
+                <section class="content-section">
+                    <h2 class="section-title">📋 ORIENTAÇÕES GERAIS</h2>
+                    
+                    <div class="guidelines-container">
+                        <div class="guideline-grid">
+                            <div class="guideline-card">
+                                <div class="guideline-icon">💧</div>
+                                <h4>Hidratação Estratégica</h4>
+                                <div class="guideline-content">
+                                    <p><strong>Meta:</strong> 45ml por kg de peso corporal/dia</p>
+                                    <p><strong>Volume diário:</strong> 3,5 a 4,0 litros</p>
+                                    <div class="hydration-schedule">
+                                        <div><span>Manhã:</span> 1,2-1,5 litros</div>
+                                        <div><span>Tarde:</span> 1,2-1,5 litros</div>
+                                        <div><span>Noite:</span> 1,0-1,2 litros</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="guideline-card">
+                                <div class="guideline-icon">😴</div>
+                                <h4>Qualidade do Sono</h4>
+                                <div class="guideline-content">
+                                    <p><strong>Objetivo:</strong> 7-8 horas por noite</p>
+                                    <p><strong>Rotina:</strong> Desligar eletrônicos 1h antes de dormir</p>
+                                    <p><strong>Ambiente:</strong> Quarto escuro, fresco e silencioso</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="important-guidelines">
+                            <h4>📌 Orientações Alimentares Importantes</h4>
+                            
+                            <div class="guidelines-list">
+                                <div class="guideline-item">
+                                    <span class="guideline-number">1</span>
+                                    <div class="guideline-text">
+                                        <strong>Evitar beliscar:</strong> Se não está no plano não é pra comer, comer a mais ou a menos você está errando o plano, qualquer dificuldade em seguir o plano não deixe de me avisar.
+                                    </div>
+                                </div>
+                                
+                                <div class="guideline-item">
+                                    <span class="guideline-number">2</span>
+                                    <div class="guideline-text">
+                                        <strong>Está liberado bebidas zero calorias</strong>
+                                    </div>
+                                </div>
+                                
+                                <div class="guideline-item">
+                                    <span class="guideline-number">3</span>
+                                    <div class="guideline-text">
+                                        <strong>Refeição livre consciente:</strong> Uma vez na semana está liberada uma refeição livre consciente, substituir uma refeição principal ex: almoço ou janta, um lanche ou 3 pedaços de pizza, sem exageros aproveite o momento para socializar!!
+                                    </div>
+                                </div>
+                                
+                                <div class="guideline-item">
+                                    <span class="guideline-number">4</span>
+                                    <div class="guideline-text">
+                                        <strong>Não utilizar açúcar para adoçar bebidas</strong>
+                                    </div>
+                                </div>
+                                
+                                <div class="guideline-item">
+                                    <span class="guideline-number">5</span>
+                                    <div class="guideline-text">
+                                        <strong>Utilizar com moderação sal e gordura no preparo dos alimentos</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="additional-guidelines">
+                            <h4>📝 Orientações Complementares</h4>
+                            <div class="additional-grid">
+                                <div class="additional-item">
+                                    <strong>Flexibilidade:</strong> As opções podem ser alternadas conforme preferência e disponibilidade
+                                </div>
+                                <div class="additional-item">
+                                    <strong>Quantidades:</strong> Ajustar porções conforme fome e saciedade
+                                </div>
+                                <div class="additional-item">
+                                    <strong>Substituições:</strong> Proteínas e carboidratos podem ser substituídos por equivalentes
+                                </div>
+                                <div class="additional-item">
+                                    <strong>Temperos:</strong> Usar ervas, especiarias e temperos naturais
+                                </div>
+                                <div class="additional-item">
+                                    <strong>Preparações:</strong> Preferência por métodos saudáveis (grelhado, assado, cozido)
+                                </div>
+                                <div class="additional-item">
+                                    <strong>Hidratação:</strong> Manter consumo adequado de água ao longo do dia
+                                </div>
+                                <div class="additional-item">
+                                    <strong>Regularidade:</strong> Manter horários das refeições para otimizar metabolismo
+                                </div>
+                                <div class="additional-item">
+                                    <strong>Suplementação:</strong> Seguir rigorosamente os horários para máxima eficácia
+                                </div>
+                                <div class="additional-item">
+                                    <strong>Interações:</strong> Respeitar intervalos entre suplementos para evitar competição na absorção
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <footer class="footer">
+                <span>São Mateus - ES, 23 de julho de 2025</span>
+            </footer>
+        </div>
+
+        <!-- PÁGINA 4 - SUPLEMENTAÇÃO -->
+        <div class="page">
+            <header class="header">
+                <div class="header-left">
+                    <svg class="header-logo" viewBox="0 0 100 100" fill="currentColor">
+                        <circle cx="50" cy="50" r="40" stroke="currentColor" stroke-width="3" fill="none"/>
+                        <text x="50" y="58" text-anchor="middle" font-family="Inter" font-weight="700" font-size="20">LN</text>
+                    </svg>
+                    <div>
+                        <div class="header-name">Leonardo Alves</div>
+                        <div style="font-size: 0.8rem; opacity: 0.9;">CRN-ES: 23.101.210</div>
+                    </div>
+                </div>
+                <div class="header-contact">
+                    <div class="contact-item">leonutri.1993@gmail.com</div>
+                    <div class="contact-item">(27)99750-4849 | @Leonutrialves</div>
+                    <div class="contact-item"><strong>Priscila Andrade Pires - 32 anos</strong></div>
+                </div>
+            </header>
+
+            <div class="main-content">
+                <section class="content-section">
+                    <h2 class="section-title">💊 PROTOCOLO DE SUPLEMENTAÇÃO</h2>
+                    
+                    <div class="supplements-container">
+                        <div class="supplements-section">
+                            <h3>🏪 Suplementos Industrializados</h3>
+                            
+                            <div class="supplements-grid">
+                                <div class="supplement-card">
+                                    <div class="supplement-header">
+                                        <h4>Probióticos</h4>
+                                        <span class="dosage">1 cápsula</span>
+                                    </div>
+                                    <div class="supplement-content">
+                                        <div class="timing">⏰ 7h - JEJUM</div>
+                                        <div class="brands">Essential Probiatil, Vitafor, Thorne</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="supplement-card">
+                                    <div class="supplement-header">
+                                        <h4>Vitamina C</h4>
+                                        <span class="dosage">1000mg</span>
+                                    </div>
+                                    <div class="supplement-content">
+                                        <div class="timing">⏰ 7h30 - COM COMIDA</div>
+                                        <div class="brands">Essential Nutrition, Vitafor, Puravida</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="supplement-card">
+                                    <div class="supplement-header">
+                                        <h4>Vitamina D3</h4>
+                                        <span class="dosage">4000 UI</span>
+                                    </div>
+                                    <div class="supplement-content">
+                                        <div class="timing">⏰ 7h30 - COM GORDURA</div>
+                                        <div class="brands">Essential Nutrition, Puravida, Vitafor</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="supplement-card">
+                                    <div class="supplement-header">
+                                        <h4>Ômega-3 DHA</h4>
+                                        <span class="dosage">2 cápsulas</span>
+                                    </div>
+                                    <div class="supplement-content">
+                                        <div class="timing">⏰ 12h - COM GORDURA</div>
+                                        <div class="brands">Essential Mega DHA, Vitafor, NOW</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="supplement-card">
+                                    <div class="supplement-header">
+                                        <h4>Creatina</h4>
+                                        <span class="dosage">5g</span>
+                                    </div>
+                                    <div class="supplement-content">
+                                        <div class="timing">⏰ PÓS-TREINO</div>
+                                        <div class="brands">Growth Creatine, Integralmedica, ON</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="supplement-card">
+                                    <div class="supplement-header">
+                                        <h4>L-Glutamina</h4>
+                                        <span class="dosage">15g</span>
+                                    </div>
+                                    <div class="supplement-content">
+                                        <div class="timing">⏰ 19h - JEJUM</div>
+                                        <div class="brands">Growth, Integralmedica, ON</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="supplement-card">
+                                    <div class="supplement-header">
+                                        <h4>Ashwagandha</h4>
+                                        <span class="dosage">600mg</span>
+                                    </div>
+                                    <div class="supplement-content">
+                                        <div class="timing">⏰ 21h - NOITE</div>
+                                        <div class="brands">Essential, Vitafor, NOW</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="supplement-card">
+                                    <div class="supplement-header">
+                                        <h4>Magnésio Dimalato</h4>
+                                        <span class="dosage">400mg</span>
+                                    </div>
+                                    <div class="supplement-content">
+                                        <div class="timing">⏰ 21h30 - NOITE</div>
+                                        <div class="brands">Essential, Vitafor, Puravida</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="supplement-card">
+                                    <div class="supplement-header">
+                                        <h4>Melatonina</h4>
+                                        <span class="dosage">3mg</span>
+                                    </div>
+                                    <div class="supplement-content">
+                                        <div class="timing">⏰ 21h45 - ANTES DORMIR</div>
+                                        <div class="brands">Essential, Vitafor, NOW</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="formulas-section">
+                            <h3>🧪 Fórmulas Manipuladas</h3>
+                            
+                            <div class="formulas-grid">
+                                <div class="formula-card">
+                                    <div class="formula-header">
+                                        <h4>Fórmula 1</h4>
+                                    </div>
+                                    <div class="formula-content">
+                                        <p>NAC (N-Acetilcisteína) 600mg + Selênio 200mcg</p>
+                                        <div class="formula-timing">⏰ Horário: 7h00 (jejum)</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="formula-card">
+                                    <div class="formula-header">
+                                        <h4>Fórmula 2</h4>
+                                    </div>
+                                    <div class="formula-content">
+                                        <p>Complexo B completo (B1 50mg + B2 50mg + B3 100mg + B5 100mg + B6 50mg + B12 100mcg + Biotina 300mcg + Ácido Fólico 400mcg)</p>
+                                        <div class="formula-timing">⏰ Horário: 7h30 (com comida)</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="formula-card">
+                                    <div class="formula-header">
+                                        <h4>Fórmula 3</h4>
+                                    </div>
+                                    <div class="formula-content">
+                                        <p>L-Theanina 200mg + Zinco 15mg</p>
+                                        <div class="formula-timing">⏰ Horário: 15h00</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="formula-card">
+                                    <div class="formula-header">
+                                        <h4>Fórmula 4</h4>
+                                    </div>
+                                    <div class="formula-content">
+                                        <p>5-HTP 100mg + Triptofano 500mg</p>
+                                        <div class="formula-timing">⏰ Horário: 20h00 (jejum)</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="formula-card">
+                                    <div class="formula-header">
+                                        <h4>Fórmula 5</h4>
+                                    </div>
+                                    <div class="formula-content">
+                                        <p>Cúrcuma 500mg + Piperina 10mg</p>
+                                        <div class="formula-timing">⏰ Horário: 12h00 (com gordura)</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="objectives-section">
+                            <h3>🎯 Objetivos da Suplementação</h3>
+                            <div class="objectives-list">
+                                <div class="objective-item">
+                                    <span class="objective-icon">🌱</span>
+                                    <span><strong>Saúde intestinal:</strong> Probióticos + L-Glutamina + Vitamina C</span>
+                                </div>
+                                <div class="objective-item">
+                                    <span class="objective-icon">🧘</span>
+                                    <span><strong>Controle da ansiedade:</strong> L-Theanina + 5-HTP + Ashwagandha + Magnésio</span>
+                                </div>
+                                <div class="objective-item">
+                                    <span class="objective-icon">💪</span>
+                                    <span><strong>Performance:</strong> Creatina + Complexo B + Vitamina D3</span>
+                                </div>
+                                <div class="objective-item">
+                                    <span class="objective-icon">🔥</span>
+                                    <span><strong>Anti-inflamatório:</strong> Ômega-3 + Cúrcuma + Vitamina C</span>
+                                </div>
+                                <div class="objective-item">
+                                    <span class="objective-icon">😴</span>
+                                    <span><strong>Qualidade do sono:</strong> Ashwagandha + Magnésio + Melatonina + Triptofano</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <footer class="footer">
+                <span>São Mateus - ES, 23 de julho de 2025</span>
+            </footer>
+        </div>
+
+        <!-- PÁGINA 5 - EXERCÍCIOS E PLANEJAMENTO DIETÉTICO -->
+        <div class="page">
+            <header class="header">
+                <div class="header-left">
+                    <svg class="header-logo" viewBox="0 0 100 100" fill="currentColor">
+                        <circle cx="50" cy="50" r="40" stroke="currentColor" stroke-width="3" fill="none"/>
+                        <text x="50" y="58" text-anchor="middle" font-family="Inter" font-weight="700" font-size="20">LN</text>
+                    </svg>
+                    <div>
+                        <div class="header-name">Leonardo Alves</div>
+                        <div style="font-size: 0.8rem; opacity: 0.9;">CRN-ES: 23.101.210</div>
+                    </div>
+                </div>
+                <div class="header-contact">
+                    <div class="contact-item">leonutri.1993@gmail.com</div>
+                    <div class="contact-item">(27)99750-4849 | @Leonutrialves</div>
+                    <div class="contact-item"><strong>Priscila Andrade Pires - 32 anos</strong></div>
+                </div>
+            </header>
+
+            <div class="main-content">
+                <section class="content-section">
+                    <h2 class="section-title">🏃‍♀️ ORIENTAÇÕES DE EXERCÍCIO AERÓBICO</h2>
+                    
+                    <div class="exercise-container">
+                        <div class="exercise-grid">
+                            <div class="exercise-card">
+                                <div class="exercise-icon">🏋️‍♀️</div>
+                                <h4>Dias de Musculação</h4>
+                                <div class="exercise-details">
+                                    <div class="exercise-item">
+                                        <strong>Duração:</strong> 30-35 minutos
+                                    </div>
+                                    <div class="exercise-item">
+                                        <strong>Intensidade:</strong> Caminhada rápida ou corrida leve
+                                    </div>
+                                    <div class="exercise-item">
+                                        <strong>Distância meta:</strong> 3 km
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="exercise-card">
+                                <div class="exercise-icon">🚶‍♀️</div>
+                                <h4>Dias sem Musculação</h4>
+                                <div class="exercise-details">
+                                    <div class="exercise-item">
+                                        <strong>Duração:</strong> 50-60 minutos
+                                    </div>
+                                    <div class="exercise-item">
+                                        <strong>Intensidade:</strong> Caminhada moderada
+                                    </div>
+                                    <div class="exercise-item">
+                                        <strong>Distância meta:</strong> 6 km
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="exercise-summary">
+                            <div class="summary-item">
+                                <strong>Meta semanal:</strong> 24-30 km totais
+                            </div>
+                            <div class="summary-item">
+                                <strong>Monitoramento:</strong> Usar aplicativo de corrida/caminhada
+                            </div>
+                            <div class="summary-item">
+                                <strong>Registrar:</strong> distância, tempo
+                            </div>
+                            <div class="summary-item">
+                                <strong>Anotar sensações:</strong> disposição, fadiga, recuperação
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2 class="section-title">🍽️ PLANEJAMENTO DIETÉTICO</h2>
+                    
+                    <div class="nutrition-dashboard">
+                        <div class="macro-card">
+                            <div class="macro-value">1900</div>
+                            <div class="macro-label">kcal</div>
+                        </div>
+                        <div class="macro-card">
+                            <div class="macro-value">169g</div>
+                            <div class="macro-label">proteína</div>
+                        </div>
+                        <div class="macro-card">
+                            <div class="macro-value">148g</div>
+                            <div class="macro-label">carbo</div>
+                        </div>
+                        <div class="macro-card">
+                            <div class="macro-value">70g</div>
+                            <div class="macro-label">gordura</div>
+                        </div>
+                    </div>
+                    
+                    <div class="meal-schedule">
+                        <h4>⏰ Horários das Refeições</h4>
+                        <div class="schedule-grid">
+                            <div class="schedule-item">
+                                <span class="time">7h30-8h00</span>
+                                <span class="meal">Café da manhã</span>
+                            </div>
+                            <div class="schedule-item">
+                                <span class="time">10h00-10h30</span>
+                                <span class="meal">Lanche manhã</span>
+                            </div>
+                            <div class="schedule-item">
+                                <span class="time">12h00-13h00</span>
+                                <span class="meal">Almoço</span>
+                            </div>
+                            <div class="schedule-item">
+                                <span class="time">15h30-16h00</span>
+                                <span class="meal">Lanche tarde</span>
+                            </div>
+                            <div class="schedule-item">
+                                <span class="time">19h00-20h00</span>
+                                <span class="meal">Jantar</span>
+                            </div>
+                            <div class="schedule-item">
+                                <span class="time">21h30</span>
+                                <span class="meal">Ceia (opcional)</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <footer class="footer">
+                <span>São Mateus - ES, 23 de julho de 2025</span>
+            </footer>
+        </div>
+
+        <!-- PÁGINA 6 - CAFÉ DA MANHÃ -->
+        <div class="page">
+            <header class="header">
+                <div class="header-left">
+                    <svg class="header-logo" viewBox="0 0 100 100" fill="currentColor">
+                        <circle cx="50" cy="50" r="40" stroke="currentColor" stroke-width="3" fill="none"/>
+                        <text x="50" y="58" text-anchor="middle" font-family="Inter" font-weight="700" font-size="20">LN</text>
+                    </svg>
+                    <div>
+                        <div class="header-name">Leonardo Alves</div>
+                        <div style="font-size: 0.8rem; opacity: 0.9;">CRN-ES: 23.101.210</div>
+                    </div>
+                </div>
+                <div class="header-contact">
+                    <div class="contact-item">leonutri.1993@gmail.com</div>
+                    <div class="contact-item">(27)99750-4849 | @Leonutrialves</div>
+                    <div class="contact-item"><strong>Priscila Andrade Pires - 32 anos</strong></div>
+                </div>
+            </header>
+
+            <div class="main-content">
+                <section class="content-section">
+                    <h2 class="section-title">☀️ CAFÉ DA MANHÃ</h2>
+                    
+                    <div class="meals-container">
+                        <div class="meal-option">
+                            <h3 class="meal-title">OPÇÃO 1</h3>
+                            
+                            <div class="meal-groups">
+                                <div class="meal-group">
+                                    <h4>🥚 Composição Base</h4>
+                                    <div class="food-items">
+                                        <div class="food-item">
+                                            <span class="food-name">Ovos (3 unidades)</span>
+                                            <span class="food-amount">150g</span>
+                                            <span class="food-macros">216 kcal | 18.6g proteína | 1.2g carbo | 15.0g gordura</span>
+                                        </div>
+                                        <div class="food-item">
+                                            <span class="food-name">Azeite (preparo)</span>
+                                            <span class="food-amount">3g</span>
+                                            <span class="food-macros">27 kcal | 0g proteína | 0g carbo | 3.0g gordura</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="meal-group">
+                                    <h4>🍠 Carboidratos - Escolher 1</h4>
+                                    <div class="food-items">
+                                        <div class="food-item">
+                                            <span class="food-name">Banana da Terra Cozida</span>
+                                            <span class="food-amount">90g</span>
+                                            <span class="food-macros">108 kcal | 1.1g proteína | 27.8g carbo | 0.1g gordura</span>
+                                        </div>
+                                        <div class="food-item">
+                                            <span class="food-name">Batata Doce Cozida</span>
+                                            <span class="food-amount">120g</span>
+                                            <span class="food-macros">103 kcal | 2.0g proteína | 25.0g carbo | 0.1g gordura</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="meal-group">
+                                    <h4>🧀 Proteína Adicional - Escolher 1</h4>
+                                    <div class="food-items">
+                                        <div class="food-item">
+                                            <span class="food-name">Queijo Minas Frescal</span>
+                                            <span class="food-amount">50g</span>
+                                            <span class="food-macros">125 kcal | 9.0g proteína | 2.0g carbo | 9.0g gordura</span>
+                                        </div>
+                                        <div class="food-item">
+                                            <span class="food-name">Queijo Branco</span>
+                                            <span class="food-amount">45g</span>
+                                            <span class="food-macros">104 kcal | 9.0g proteína | 1.4g carbo | 7.2g gordura</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="meal-group">
+                                    <h4>   Frutas - Escolher 1</h4>
+                                    <div class="food-items">
+                                        <div class="food-item">
+                                            <span class="food-name">Kiwi</span>
+                                            <span class="food-amount">60g</span>
+                                            <span class="food-macros">31 kcal | 0.7g proteína | 6.9g carbo | 0.4g gordura</span>
+                                        </div>
+                                        <div class="food-item">
+                                            <span class="food-name">Morango</span>
+                                            <span class="food-amount">90g</span>
+                                            <span class="food-macros">27 kcal | 0.7g proteína | 4.9g carbo | 0.2g gordura</span>
+                                        </div>
+                                        <div class="food-item">
+                                            <span class="food-name">Laranja</span>
+                                            <span class="food-amount">70g</span>
+                                            <span class="food-macros">33 kcal | 0.8g proteína | 7.1g carbo | 0.1g gordura</span>
+                                        </div>
+                                        <div class="food-item">
+                                            <span class="food-name">Mamão Papaia</span>
+                                            <span class="food-amount">70g</span>
+                                            <span class="food-macros">30 kcal | 0.4g proteína | 7.4g carbo | 0.1g gordura</span>
+                                        </div>
+                                        <div class="food-item">
+                                            <span class="food-name">Abacaxi</span>
+                                            <span class="food-amount">80g</span>
+                                            <span class="food-macros">34 kcal | 0.3g proteína | 8.5g carbo | 0.1g gordura</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="meal-total">
+                                <strong>Total: 507-520 kcal | 30-32g proteína | 36-42g carbo | 27-29g gordura</strong>
+                            </div>
+                        </div>
+                        
+                        <div class="meal-option">
+                            <h3 class="meal-title">OPÇÃO 2</h3>
+                            
+                            <div class="meal-groups">
+                                <div class="meal-group single">
+                                    <div class="food-items">
+                                        <div class="food-item">
+                                            <span class="food-name">Whey Protein Concentrado</span>
+                                            <span class="food-amount">30g</span>
+                                            <span class="food-macros">114 kcal | 24.0g proteína | 1.5g carbo | 1.5g gordura</span>
+                                        </div>
+                                        <div class="food-item">
+                                            <span class="food-name">Leite Desnatado</span>
+                                            <span class="food-amount">250ml</span>
+                                            <span class="food-macros">85 kcal | 8.5g proteína | 12.0g carbo | 0.2g gordura</span>
+                                        </div>
+                                        <div class="food-item">
+                                            <span class="food-name">Banana</span>
+                                            <span class="food-amount">90g</span>
+                                            <span class="food-macros">81 kcal | 1.1g proteína | 20.7g carbo | 0.1g gordura</span>
+                                        </div>
+                                        <div class="food-item">
+                                            <span class="food-name">Farelo de Aveia</span>
+                                            <span class="food-amount">25g</span>
+                                            <span class="food-macros">75 kcal | 4.3g proteína | 14.0g carbo | 1.8g gordura</span>
+                                        </div>
+                                        <div class="food-item">
+                                            <span class="food-name">Castanha-do-Pará</span>
+                                            <span class="food-amount">25g (5 unidades)</span>
+                                            <span class="food-macros">165 kcal | 3.5g proteína | 3.0g carbo | 16.7g gordura</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="meal-total">
+                                <strong>Total: 520 kcal | 41.4g proteína | 51.2g carbo | 20.3g gordura</strong>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <footer class="footer">
+                <span>São Mateus - ES, 23 de julho de 2025</span>
+            </footer>
+        </div>
+
+        <!-- PÁGINA 7 - ALMOÇO -->
+        <div class="page">
+            <header class="header">
+                <div class="header-left">
+                    <svg class="header-logo" viewBox="0 0 100 100" fill="currentColor">
+                        <circle cx="50" cy="50" r="40" stroke="currentColor" stroke-width="3" fill="none"/>
+                        <text x="50" y="58" text-anchor="middle" font-family="Inter" font-weight="700" font-size="20">LN</text>
+                    </svg>
+                    <div>
+                        <div class="header-name">Leonardo Alves</div>
+                        <div style="font-size: 0.8rem; opacity: 0.9;">CRN-ES: 23.101.210</div>
+                    </div>
+                </div>
+                <div class="header-contact">
+                    <div class="contact-item">leonutri.1993@gmail.com</div>
+                    <div class="contact-item">(27)99750-4849 | @Leonutrialves</div>
+                    <div class="contact-item"><strong>Priscila Andrade Pires - 32 anos</strong></div>
+                </div>
+            </header>
+
+            <div class="main-content">
+                <section class="content-section">
+                    <h2 class="section-title">🍽️ ALMOÇO</h2>
+                    
+                    <div class="meals-container">
+                        <div class="meal-option">
+                            <div class="meal-groups">
+                                <div class="meal-group">
+                                    <h4>🍗 Proteínas - Escolher 1</h4>
+                                    <div class="food-items">
+                                        <div class="food-item">
+                                            <span class="food-name">Peito de Frango Grelhado</span>
+                                            <span class="food-amount">135g</span>
+                                            <span class="food-macros">223 kcal | 41.9g proteína | 0g carbo | 4.9g gordura</span>
+                                        </div>
+                                        <div class="food-item">
+                                            <span class="food-name">Lombo Suíno Grelhado</span>
+                                            <span class="food-amount">140g</span>
+                                            <span class="food-macros">252 kcal | 40.6g proteína | 0g carbo | 8.4g gordura</span>
+                                        </div>
+                                        <div class="food-item">
+                                            <span class="food-name">Tilápia Grelhada</span>
+                                            <span class="food-amount">195g</span>
+                                            <span class="food-macros">195 kcal | 41.0g proteína | 0g carbo | 3.9g gordura</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="meal-group">
+                                    <h4>   Carboidratos - Escolher 1</h4>
+                                    <div class="food-items">
+                                        <div class="food-item">
+                                            <span class="food-name">Arroz Integral Cozido</span>
+                                            <span class="food-amount">120g</span>
+                                            <span class="food-macros">149 kcal | 3.1g proteína | 31.0g carbo | 1.2g gordura</span>
+                                        </div>
+                                        <div class="food-item">
+                                            <span class="food-name">Purê de Abóbora</span>
+                                            <span class="food-amount">260g</span>
+                                            <span class="food-macros">130 kcal | 2.9g proteína | 29.9g carbo | 0.5g gordura</span>
+                                        </div>
+                                        <div class="food-item">
+                                            <span class="food-name">Batata Doce Cozida</span>
+                                            <span class="food-amount">140g</span>
+                                            <span class="food-macros">120 kcal | 2.3g proteína | 29.2g carbo | 0.1g gordura</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="meal-group">
+                                    <h4>🥗 Vegetais + Azeite</h4>
+                                    <div class="food-items">
+                                        <div class="food-item">
+                                            <span class="food-name">Brócolis Cozido</span>
+                                            <span class="food-amount">100g</span>
+                                            <span class="food-macros">25 kcal | 3.4g proteína | 4.0g carbo | 0.4g gordura</span>
+                                        </div>
+                                        <div class="food-item">
+                                            <span class="food-name">Salada (Alface + Tomate + Pepino)</span>
+                                            <span class="food-amount">190g</span>
+                                            <span class="food-macros">27 kcal | 2.4g proteína | 4.8g carbo | 0.4g gordura</span>
+                                        </div>
+                                        <div class="food-item">
+                                            <span class="food-name">Azeite Extra Virgem</span>
+                                            <span class="food-amount">12g</span>
+                                            <span class="food-macros">108 kcal | 0g proteína | 0g carbo | 12.0g gordura</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="meal-total">
+                                <strong>Total: 652-692 kcal | 49-52g proteína | 68-70g carbo | 21-27g gordura</strong>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2 class="section-title">🥤 LANCHE DA TARDE</h2>
+                    
+                    <div class="meals-container">
+                        <div class="meal-option">
+                            <h3 class="meal-title">OPÇÃO 1</h3>
+                            
+                            <div class="meal-groups">
+                                <div class="meal-group">
+                                    <h4>💪 Base Proteica</h4>
+                                    <div class="food-items">
+                                        <div class="food-item">
+                                            <span class="food-name">Whey Protein Concentrado</span>
+                                            <span class="food-amount">30g</span>
+                                            <span class="food-macros">114 kcal | 24.0g proteína | 1.5g carbo | 1.5g gordura</span>
+                                        </div>
+                                        <div class="food-item">
+                                            <span class="food-name">Água</span>
+                                            <span class="food-amount">200ml</span>
+                                            <span class="food-macros">0 kcal | 0g proteína | 0g carbo | 0g gordura</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="meal-group">
+                                    <h4>🍎 Fruta - Escolher 1</h4>
+                                    <div class="food-items">
+                                        <div class="food-item">
+                                            <span class="food-name">Banana Prata</span>
+                                            <span class="food-amount">100g</span>
+                                            <span class="food-macros">90 kcal | 1.2g proteína | 23.0g carbo | 0.1g gordura</span>
+                                        </div>
+                                        <div class="food-item">
+                                            <span class="food-name">Maçã</span>
+                                            <span class="food-amount">150g</span>
+                                            <span class="food-macros">79 kcal | 0.4g proteína | 21.0g carbo | 0.2g gordura</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="meal-group">
+                                    <h4>   Castanha</h4>
+                                    <div class="food-items">
+                                        <div class="food-item">
+                                            <span class="food-name">Castanha-do-Pará</span>
+                                            <span class="food-amount">15g (3 unidades)</span>
+                                            <span class="food-macros">99 kcal | 2.1g proteína | 1.8g carbo | 10.0g gordura</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="meal-total">
+                                <strong>Total: 283-293 kcal | 26-27g proteína | 26-28g carbo | 11.6g gordura</strong>
+                            </div>
+                        </div>
+
+                        <div class="meal-option">
+                            <h3 class="meal-title">OPÇÃO 2</h3>
+                            
+                            <div class="meal-groups">
+                                <div class="meal-group single">
+                                    <div class="food-items">
+                                        <div class="food-item">
+                                            <span class="food-name">Pão Integral</span>
+                                            <span class="food-amount">40g (1 fatia)</span>
+                                            <span class="food-macros">96 kcal | 3.2g proteína | 16.0g carbo | 2.0g gordura</span>
+                                        </div>
+                                        <div class="food-item">
+                                            <span class="food-name">Queijo Cottage</span>
+                                            <span class="food-amount">60g</span>
+                                            <span class="food-macros">60 kcal | 11.4g proteína | 2.4g carbo | 1.2g gordura</span>
+                                        </div>
+                                        <div class="food-item">
+                                            <span class="food-name">Frango Desfiado</span>
+                                            <span class="food-amount">40g</span>
+                                            <span class="food-macros">66 kcal | 12.3g proteína | 0g carbo | 1.4g gordura</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="meal-group">
+                                    <h4>🥑 Gordura Adicional - Escolher 1</h4>
+                                    <div class="food-items">
+                                        <div class="food-item">
+                                            <span class="food-name">Abacate</span>
+                                            <span class="food-amount">60g</span>
+                                            <span class="food-macros">96 kcal | 1.2g proteína | 4.8g carbo | 8.8g gordura</span>
+                                        </div>
+                                        <div class="food-item">
+                                            <span class="food-name">Castanha-do-Pará</span>
+                                            <span class="food-amount">15g (3 unidades)</span>
+                                            <span class="food-macros">99 kcal | 2.1g proteína | 1.8g carbo | 10.0g gordura</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="meal-total">
+                                <strong>Total: 318-321 kcal | 28-29g proteína | 23-25g carbo | 13g gordura</strong>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <footer class="footer">
+                <span>São Mateus - ES, 23 de julho de 2025</span>
+            </footer>
+        </div>
+
+        <!-- PÁGINA 8 - JANTAR E CEIA -->
+        <div class="page">
+            <header class="header">
+                <div class="header-left">
+                    <svg class="header-logo" viewBox="0 0 100 100" fill="currentColor">
+                        <circle cx="50" cy="50" r="40" stroke="currentColor" stroke-width="3" fill="none"/>
+                        <text x="50" y="58" text-anchor="middle" font-family="Inter" font-weight="700" font-size="20">LN</text>
+                    </svg>
+                    <div>
+                        <div class="header-name">Leonardo Alves</div>
+                        <div style="font-size: 0.8rem; opacity: 0.9;">CRN-ES: 23.101.210</div>
+                    </div>
+                </div>
+                <div class="header-contact">
+                    <div class="contact-item">leonutri.1993@gmail.com</div>
+                    <div class="contact-item">(27)99750-4849 | @Leonutrialves</div>
+                    <div class="contact-item"><strong>Priscila Andrade Pires - 32 anos</strong></div>
+                </div>
+            </header>
+
+            <div class="main-content">
+                <section class="content-section">
+                    <h2 class="section-title">🌙 JANTAR</h2>
+                    
+                    <div class="meals-container">
+                        <div class="meal-option">
+                            <h3 class="meal-title">OPÇÃO 1 (Refeição Completa)</h3>
+                            
+                            <div class="meal-groups">
+                                <div class="meal-group">
+                                    <h4>   Proteínas - Escolher 1</h4>
+                                    <div class="food-items">
+                                        <div class="food-item">
+                                            <span class="food-name">Peito de Frango Desfiado</span>
+                                            <span class="food-amount">135g</span>
+                                            <span class="food-macros">223 kcal | 41.9g proteína | 0g carbo | 4.9g gordura</span>
+                                        </div>
+                                        <div class="food-item">
+                                            <span class="food-name">Lombo Suíno Grelhado</span>
+                                            <span class="food-amount">140g</span>
+                                            <span class="food-macros">252 kcal | 40.6g proteína | 0g carbo | 8.4g gordura</span>
+                                        </div>
+                                        <div class="food-item">
+                                            <span class="food-name">Tilápia Grelhada</span>
+                                            <span class="food-amount">195g</span>
+                                            <span class="food-macros">195 kcal | 41.0g proteína | 0g carbo | 3.9g gordura</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="meal-group">
+                                    <h4>🍠 Carboidratos - Escolher 1</h4>
+                                    <div class="food-items">
+                                        <div class="food-item">
+                                            <span class="food-name">Batata Doce Cozida</span>
+                                            <span class="food-amount">80g</span>
+                                            <span class="food-macros">69 kcal | 1.4g proteína | 16.6g carbo | 0.1g gordura</span>
+                                        </div>
+                                        <div class="food-item">
+                                            <span class="food-name">Purê de Batata Inglesa</span>
+                                            <span class="food-amount">120g</span>
+                                            <span class="food-macros">84 kcal | 2.4g proteína | 18.0g carbo | 0.2g gordura</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="meal-group">
+                                    <h4>🥗 Salada + Azeite</h4>
+                                    <div class="food-items">
+                                        <div class="food-item">
+                                            <span class="food-name">Salada Mista (Alface + Tomate + Pepino)</span>
+                                            <span class="food-amount">200g</span>
+                                            <span class="food-macros">25 kcal | 2.0g proteína | 4.5g carbo | 0.3g gordura</span>
+                                        </div>
+                                        <div class="food-item">
+                                            <span class="food-name">Azeite Extra Virgem</span>
+                                            <span class="food-amount">10g</span>
+                                            <span class="food-macros">90 kcal | 0g proteína | 0g carbo | 10.0g gordura</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="meal-total">
+                                <strong>Total: 407-451 kcal | 45-47g proteína | 21-23g carbo | 15-19g gordura</strong>
+                            </div>
+                        </div>
+                        
+                        <div class="meal-option">
+                            <h3 class="meal-title">OPÇÃO 2 (Lanche Rápido)</h3>
+                            
+                            <div class="meal-groups">
+                                <div class="meal-group single">
+                                    <div class="food-items">
+                                        <div class="food-item">
+                                            <span class="food-name">RAP 10: Wrap integral (45g) + Frango (110g) + Queijo cottage (35g) + Alface/tomate</span>
+                                            <span class="food-amount"></span>
+                                            <span class="food-macros">418 kcal | 45.5g proteína | 24.0g carbo | 13.0g gordura</span>
+                                        </div>
+                                        <div class="food-item">
+                                            <span class="food-name">Sanduíche Natural: Pão integral (50g) + Frango (90g) + Queijo cottage (35g) + Alface/tomate + Azeite (3g)</span>
+                                            <span class="food-amount"></span>
+                                            <span class="food-macros">438 kcal | 46.0g proteína | 25.0g carbo | 16.0g gordura</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="meal-total">
+                                <strong>Total: 418-438 kcal | 45-46g proteína | 24-25g carbo | 13-16g gordura</strong>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2 class="section-title">😴 CEIA</h2>
+                    <div class="meals-container">
+                        <div class="meal-option">
+                            <h3 class="meal-title">OPÇÕES</h3>
+                            <div class="meal-groups single">
+                                <div class="food-items">
+                                    <div class="food-item">
+                                        <span class="food-name">Chá de Erva-cidreira</span>
+                                        <span class="food-amount"></span>
+                                        <span class="food-macros"></span>
+                                    </div>
+                                    <div class="food-item">
+                                        <span class="food-name">Chá de Camomila</span>
+                                        <span class="food-amount"></span>
+                                        <span class="food-macros"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2 class="section-title">📊 RESUMO NUTRICIONAL DIÁRIO</h2>
+                    <div class="nutrition-dashboard">
+                        <div class="macro-card">
+                            <div class="macro-value">1850-1925</div>
+                            <div class="macro-label">kcal (Meta: 1900 kcal) ✅</div>
+                        </div>
+                        <div class="macro-card">
+                            <div class="macro-value">165-175g</div>
+                            <div class="macro-label">proteína (Meta: 169g - 2.0g/kg) ✅</div>
+                        </div>
+                        <div class="macro-card">
+                            <div class="macro-value">140-155g</div>
+                            <div class="macro-label">carbo (Meta: 148g) ✅</div>
+                        </div>
+                        <div class="macro-card">
+                            <div class="macro-value">68-78g</div>
+                            <div class="macro-label">gordura (Meta: 70g - 0.8g/kg) ✅</div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2 class="section-title">🗓️ REAVALIAÇÃO</h2>
+                    <div class="reassessment-details">
+                        <p><strong>Próximo retorno:</strong> 30 dias para ajustes conforme evolução e feedback da paciente</p>
+                        <h4 style="margin-top: 20px; margin-bottom: 10px; color: #2c3e50;">Monitoramento contínuo:</h4>
+                        <ul style="list-style: disc; margin-left: 20px;">
+                            <li style="margin-bottom: 5px;">Peso corporal (semanal)</li>
+                            <li style="margin-bottom: 5px;">Sintomas de ansiedade e qualidade do sono (diário)</li>
+                            <li style="margin-bottom: 5px;">Disposição e energia (diário)</li>
+                            <li style="margin-bottom: 5px;">Tolerância gastrointestinal aos suplementos</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+
+            <footer class="footer">
+                <span>São Mateus - ES, 23 de julho de 2025</span>
+            </footer>
+        </div>
+
+    </div>
+
+    <script>
+        document.getElementById('downloadPdf').addEventListener('click', gerarPDF);
+
+        function gerarPDF() {
+            const element = document.getElementById('pdf-content'); // Captura todo o conteúdo dentro da div pdf-content
+            const opt = {
+                margin: [20, 15, 20, 15], // Margens: top, right, bottom, left (20mm verticais, 15mm horizontais)
+                filename: 'planejamento_nutricional_priscila_andrade_pires.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2, logging: true, dpi: 192, letterRendering: true },
+                jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' } // Formato A4, orientação retrato
+            };
+            html2pdf().set(opt).from(element).save();
+        }
+    </script>
+</body>
+</html>
